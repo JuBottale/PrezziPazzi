@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <%- include('./partials/head.ejs', {cssSheet: "login"}) %>
+
+    <body>
+        <!-- header -->
+        <%- include('partials/header-users') %>
+        <!-- /header -->
+    
+    <hr/>
+    <main>
+        <section class="login-content">
+            <form action="/user/login" method="post" class="login-form">
+                
+                <div class="control-formulario">
+                    <input type="text" name="email" placeholder="Email" id= "email" class="control input-style">
+                    <% if (locals.errors && errors.email) { %>
+                        <div>
+                            <%= errors.email.msg %>
+                        </div>
+                    <% } %>
+                </div>
+                <br>
+                <div class="control-formulario">
+                    <input type="password" name="password" placeholder="Contraseña" id="password" class="control input-style">
+                    <% if (locals.errors && errors.password) { %>
+                        <div>
+                            <%= errors.password.msg %>
+                        </div>
+                    <% } %>
+                </div>
+                <label for="">Recordame</label> 
+                <input type="checkbox" name="recordame"> 
+                <a href="#"><p class="olvidaste-contraseña">¿Olvidaste tu Contraseña?</p></a>
+                <button type="submit" class="boton">Iniciar sesión</button>
+                <a href="/user/register"><p class="registrarte">Registrate</p></a>
+
+              
+                <section class="errores"> 
+                    <ul type="none" class="ul">  </ul>
+            </section>
+            
+
+            </form>
+        </section>
+    </main>
+
+    	<!-- footer -->
+	    <%- include('partials/footer') %>
+	    <!-- /footer -->
+
+        <script src="/js/login.js"></script>
+    </body>

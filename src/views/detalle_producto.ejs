@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs', {cssSheet: "detalle_producto"}) %>
+
+<body>
+
+    <!-- header -->
+    <%- include('./partials/header-navbar.ejs') %>
+    <!-- /header -->
+<br>
+    <main>
+    <section> 
+        <div class="div-seccion">
+        <a href="/"> <p>Inicio ></p> </a><br>
+            <h2 class="seccion"> <%= producto.descripcion %></h2>  
+        </div>
+
+       <div class="div-ofertas">
+            <article class="article-detalle">
+                <img class="img-oferta2" src ="/img/<%=producto.nombreImagen%>"></a>
+                <br>
+                <br>
+                <br>        
+            </article>
+            <article class="article-detalle">
+                
+                <div class="div-precio">
+                    <h1 class="productos">
+                        <p class="nombre-producto">"<%= producto.descripcion %>"</p>
+                        <br>   
+                        <p class="marca1">"<%=producto.marca%>"</p>     
+                        <br>         
+                        <p class="descripcion-producto"> Descripción</p>
+                        <br>
+                        <div class="div-ofertas1">                    
+                            <p class="precio"><%= producto.precio %><p>
+                            <p class="precio-queda"><%= producto.precioDescuentoLeyenda %></p>
+                        </div>        
+                    </h1> 
+                </div>
+                <br>
+                <button class= "bot-carrito">AÑADIR AL CARRITO</button>
+                <br>
+                <br>
+                <a href="/productos/edicion_producto/<%=producto.id%>"><button  type= "submit" class= "bot-carrito">Editar producto</button> </a>
+                <br>
+                <br>
+                <form action="/productos/delete/<%= producto.id %>?_method=DELETE" method="POST"><button type= "submit" class=bot-carrito>Borrar producto</button>
+                </form>
+                <br>        
+            </article>
+        </div>
+    </section>
+
+    <br>
+    <br>
+<section> 
+        <h2 class="nombre-seccion"> 80% en la 2da unidad de alimentos seleccionados </h2>  
+
+<div class="div-ofertas">   
+       
+    <article class="article-ofertas">
+            <img class="img-oferta" src="/img/oferta-80.jpg">
+    </article>
+
+    <article class="article-ofertas">
+        <img class="img-oferta2" src ="/img/mermelada.jpg">
+        <div class="div-precio">
+            <h3 class="productos_ofertas">Mermelada de frutilla <br>"La Campagnola"</h3> 
+        </div>
+        <br>
+        <div class="div-ofertas1">
+            <p class="precio">$800<p>
+            <p class="precio-queda">$160 la 2da unidad</p>
+        </div>
+        <button class= "boton-carrito">AÑADIR AL CARRITO</button>
+        <br>
+        <br>
+    </article>
+
+<article class="article-ofertas">
+    <img class="img-oferta2" src ="/img/fideos.jpg">
+    <div class="div-precio">
+        <h3 class="productos_ofertas">Fideos mostachol<br>"Matarazzo"</h3> 
+    </div>
+    <br>
+    <div class="div-ofertas1">
+        <p class="precio">$500<p>
+        <p class="precio-queda">$100 la 2da unidad</p>
+    </div>
+    <button class= "boton-carrito">AÑADIR AL CARRITO</button>
+    <br>
+    <br>
+</article>
+
+<article class="article-ofertas">
+    <img class="img-oferta2" src ="/img/salchichas.jpg">
+    <div class="div-precio">
+        <h3 class="productos_ofertas">Salchichas<br>"Paladini"</h3> 
+    </div>
+    <br>
+    <div class="div-ofertas1">
+        <p class="precio">$510<p>
+        <p class="precio-queda">$102 la 2da unidad</p>
+    </div>
+    <button class= "boton-carrito">AÑADIR AL CARRITO</button>
+    <br>
+    <br>
+</article>
+
+</div>
+    </section>
+
+</main>
+
+    <!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>
+
+</html>

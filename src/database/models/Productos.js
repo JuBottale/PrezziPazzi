@@ -8,31 +8,31 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        nombreImagen: {
+      imagen: {
+            type: dataTypes.STRING,
+            allowNull: false
+        }, 
+       /*  nombre: {
+            type: dataTypes.STRING,
+            allowNull: false
+        }, */
+       /*  descripcion: {
+            type: dataTypes.STRING,
+            allowNull: false
+        }, */
+        marcas: {
             type: dataTypes.STRING,
             allowNull: false
         },
-        nombre: {
+        proveedores: {
             type: dataTypes.STRING,
             allowNull: false
         },
-        descripcion: {
-            type: dataTypes.STRING,
-            allowNull: false
-        },
-        marca: {
-            type: dataTypes.STRING,
-            allowNull: false
-        },
-        /*proveedor: {
-            type: dataTypes.STRING,
-            allowNull: false
-        },*/
         precio: {
             type: dataTypes.STRING,
             allowNull: false
-        },
-        oferta: {
+         },
+        /*oferta: {
             type: dataTypes.INTEGER,
             allowNull: false
         },
@@ -43,7 +43,7 @@ module.exports = (sequelize, dataTypes) => {
         precioDescuentoLeyenda: {
             type: dataTypes.STRING,
             allowNull: false
-        }
+        } */
 
     }
 

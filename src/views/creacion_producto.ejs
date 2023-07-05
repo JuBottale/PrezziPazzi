@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs', {cssSheet: "creacion_producto"}) %>    
+
+<body>
+
+    <!-- header -->
+    <%- include('./partials/header-navbar.ejs') %>
+    <!-- /header -->
+
+    <br>
+
+    <main>
+        <h1 class="titulo">Cargar nuevos productos</h1>
+        <br>
+        <section class="register-content">
+            <form action="/productos/creacion_producto" method="post" class="signup-form" enctype="multipart/form-data">
+                <br>
+
+            <div class="contenedor">
+            <label> Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" spellcheck="true" ><i class="fa-solid fa-circle-check"></i>
+            </div>
+                <br>
+                
+            <div class="contenedor">
+            <label> Marca:</label>
+                    <input type="text" name="marca" id="marca"><i class="fa-solid fa-circle-check"></i>
+            </div>
+                <br>
+
+            <div class="contenedor">
+            <label> Precio:</label>
+                    <input type="number" name="precio" id="precio"><i class="fa-solid fa-circle-check"></i>
+            </div>
+                <br>
+
+                <div class="contenedor">
+                    <label>
+                        Categoría de oferta:
+                            <select name="categoria" id="categoria">
+                                <option value="">No aplica</option>
+                                <option value="producto">Producto</option>
+                                <option value="2do producto">2do producto</option>
+                                <option value="2x1">2x1</option>
+                                <option value="3x1">3x1</option>
+                              </select>
+                        </label>
+                    </div>
+                        <br>
+
+             <div class="contenedor">   
+            <label>Oferta:</label>
+                    <input type="number" name="oferta" id="oferta"><i class="fa-solid fa-circle-check"></i>
+            </div>    
+                <br>
+
+            <div class="contenedor">
+             <label> Descripción:</label>  
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </div>
+            <br>
+
+            <div class="contenedor">
+            <label> Imágen del producto:</label>
+            <br>
+                    <input type="file" id="imagen" name="imagen" placeholder="Imagen del producto"  accept=".jpg, .png">
+            </div>
+                <br>
+
+            <div class="contenedor-boton">
+                <button type="submit" id="boton" class="boton">Cargar producto</button>
+            </div>
+
+            <section class="errores"> 
+                <ul type="none" class="ul">  </ul>
+            </section>
+        
+            </form>
+    </main>
+
+    <!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+
+    <script src="/js/creacion_producto.js"></script>
+</body>
+
+</html>

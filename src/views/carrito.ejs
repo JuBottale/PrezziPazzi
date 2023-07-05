@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {cssSheet: "carrito"}) %>
+<body>
+
+    <!-- header -->
+    <%- include('partials/header-navbar') %>
+    <!-- /header -->
+
+
+<main>
+    <h1> Mi carrito</h1>  
+
+        <ul type="none" class="contenedor-lista"> 
+            <li>Articulo</li>
+            <li>Precio</li>
+            <li>Cantidad</li>
+            <li>SubTotal</li>
+        </ul>
+
+        <div class="contenedor-detalle-precio">
+
+  <i class="fa-sharp fa-solid fa-trash-can" class="icono-basura"></i>
+
+        <article class="article-detalle">
+          </i> <a href="./detalle_producto"><img class="img-oferta2" src ="/img/patitas-pollo.jpg"></a>
+           <p>Patitas de pollo <br> "Granja del sol"</p> 
+        </article>
+               
+        <article>
+            <h3 class="producto">$700</h3> 
+        </article>
+
+        <article>
+            <p class="producto"> <i class="fa-sharp fa-solid fa-minus"></i> 1  <i class="fa-sharp fa-solid fa-plus"></i> <p> 
+        </article>
+
+        <article>
+            <p class="producto">$700</p>
+        </article>
+
+        </div>
+     
+    <div class="div-envio-final">
+    <h3 class="producto">Envio</h3>
+    <p>$100</p>
+    <h3 class="producto">Descuentos</h3>
+    <p>N/A</p>
+    <h3 class="producto">Total</h3>
+    <p>$800</p>
+    </div>
+
+    <div class="contenedor1">
+    <button>Agregar productos</button>
+    <button>Finalizar compra</button>
+    </div>
+    <br>
+
+</main>
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>
+
+</html>

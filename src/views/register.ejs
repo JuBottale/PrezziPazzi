@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs', {cssSheet: "register"}) %>
+
+<body>
+            <!-- header -->
+            <%- include('partials/header-users') %>
+            <!-- /header -->
+    <main>
+    <h1>¡Bienvenido a Supermercado Siete!</h1>
+    <h3>Comprá o vende productos de supermercado desde tu casa</h3>
+    
+    <br>
+        <form action="/user/register" method="post" enctype="multipart/form-data" class="registro">
+            <div class="contenedor">
+                <label> Nombre:</label>
+                        <input type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null %>" id="nombre"></i>
+                </div>
+                <% if (locals.errors && errors.nombre) { %>
+                    <div>
+                        <%= errors.nombre.msg %>
+                    </div>
+                <% } %>
+                <br>
+                
+                <div class="contenedor">
+                <label> Apellido:</label>
+                        <input type="text" name="apellido" value="<%= locals.oldData ? oldData.apellido : null %>" id="apellido"></i>
+                </div>
+                <% if (locals.errors && errors.apellido) { %>
+                    <div>
+                        <%= errors.apellido.msg %>
+                    </div>
+                <% } %>
+                    <br>
+    
+                <div class="contenedor">
+                <label> Email:</label>
+                        <input type="text" name="email" id="email" value="<%= locals.oldData ? oldData.email : null %>"></i>
+                </div>
+                <% if (locals.errors && errors.email) { %>
+                    <div>
+                        <%= errors.email.msg %>
+                    </div>
+                <% } %>
+                    <br>
+    
+                    <div class="contenedor">
+                        <label>
+                            Categoría:
+                                <select name="categoria" >
+                                    <option value=""></option>
+                                    <option value="Administrador">Administrador</option> 
+                                    <option value="Personal">Personal</option>
+                                  </select>
+                            </label>
+                        </div>
+                        <% if (locals.errors && errors.categoria) { %>
+                            <div>
+                                <%= errors.categoria.msg %>
+                            </div>
+                        <% } %>
+                            <br>
+    
+                 <div class="contenedor">   
+                <label>Contraseña:</label>
+                        <input type="password" placeholder="10 a 20 caracteres como maximo"  name="password" id="password"></i>
+                </div>  
+                <% if (locals.errors && errors.password) { %>
+                    <div>
+                        <%= errors.password.msg %>
+                    </div>
+                <% } %>  
+                    <br>
+    
+                <div class="contenedor">
+                <label> Imágen de perfil:</label>
+                <br>
+                        <input type="file" id="imagen" name="imagen" placeholder="Imagen de perfil" accept=".jpg, .png" >
+                </div>
+                <% if (locals.errors && errors.imagen) { %>
+                    <div>
+                        <%= errors.imagen.msg %>
+                    </div>
+                <% } %>  
+                    <br>
+    
+                <div class="contenedor-boton">
+                    <button type="submit" class="boton" >Registrarme</button>
+                </div>
+
+            
+            <section class="errores"> 
+                    <ul type="none" class="ul">  </ul>
+            </section>
+            
+
+            </form>
+        
+    </main>
+    	<!-- footer -->
+	    <%- include('partials/footer') %>
+	    <!-- /footer -->
+
+        <script src="/js/register.js"></script>
+</body>

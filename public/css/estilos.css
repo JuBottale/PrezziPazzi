@@ -7,7 +7,10 @@
 	background-color: #fbfafa;
     position: inherit;
     width: auto;
-    background-image: url(../img/fondo-header.jpg)
+  /*   background-image: url(../img/fondo-header.jpg) */
+  background-image: url(../img/fondoHeader5.jpg);
+  background-position-y: center;
+  background-size: cover;
  }
 
  .fa-solid, .fas {
@@ -21,6 +24,11 @@
         opacity: 3;
         transition: 0.3s,border-radius 0.3s,opacity 0.3s;
 }
+
+.imagenProducto{
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3)
+}
+
 
 .logo{
     margin: 0 0 0 2px;
@@ -212,7 +220,6 @@ main{
     font-style: italic;
     color: rgb(17, 134, 17);
     font-weight: bold;
-    text-decoration: line-through black;
     margin: 0px;
     padding: 0px;
 }
@@ -312,7 +319,13 @@ nav{
     text-align: center;
     font-size: 14px;
 }
+
+.imagenProducto{
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3)
 }
+
+}
+
 
 @media (min-width: 768px){
     /*laptop*/

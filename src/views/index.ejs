@@ -8,9 +8,8 @@
         <!-- header -->
 	    <%- include('partials/header-navbar') %>
 	    <!-- /header -->
-        
 <div class="banner-picada">
-    <img src="/img/banner-picada.jpg" class="img-banner"> 
+ <!--    <img src="/img/banner-picada.jpg" class="img-banner">  -->
 </div>
     <br>
     <br>
@@ -19,9 +18,9 @@
         <h2 class="nombre-seccion"> 50% off en alimentos congelados </h2>  
 
     <div class="div-ofertas">
-            <article>
+           <!--  <article>
                     <img class="img-oferta" src="/img/mermelada.jpg">
-            </article>
+            </article> -->
 
             <% 
             
@@ -45,7 +44,7 @@
                 
             %>
 
-            <article> 
+            <article class="imagenProducto"> 
                 <a href="productos/detalle_producto/<%=producto.id%>"> 
                 <img class="img-oferta2" src ="/img/<%=producto.nombreImagen%>"></a>
                 <div class="div-precio">
@@ -54,7 +53,7 @@
                 <br>
                 <div class="div-ofertas1">
                     <p class="precio"><%=producto.precio%><p>
-                    <p class="precio-queda"><%=producto.precioDescuentoLeyenda%></p>
+                 <p class="precio-queda"><%=producto.precioDescuentoLeyenda%></p>  
                 </div>
                 <button class= "boton-carrito">AÑADIR AL CARRITO</button>
                 <br>

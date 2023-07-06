@@ -34,6 +34,6 @@ app.use ("/carrito",rutasCarrito);
 //app.set ("css",path.join(__dirname, "/views"));
 
 //abro puerto del servidor
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log ("servidor corriendo");
 });

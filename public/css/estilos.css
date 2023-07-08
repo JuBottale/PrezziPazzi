@@ -271,8 +271,7 @@ main{
 
 /* IMAGENES DE OFERTAS */
 .img-oferta2{
-    width: 100px;
-    height: 100px;
+    width: 100%;
     padding: 8px;
 }
 

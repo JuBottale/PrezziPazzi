@@ -10,39 +10,26 @@
     margin-left: 50%;
 }
 
-.imagen3{
-    width: 350px;
-    height: 300px;
-    padding: 10px;
-}
+.contenedor-articulo1{
+    display: -webkit-inline-box;
+    text-align: justify;
+    }
 
-.texto-cont-articulo{
-    color: #919090;
-    display: flex;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: horizontal;
-    padding-top: 40%;
-    width: 60%;
-}
+.imagen1{
+    float:right; 
+    padding-right: 10px;
+    width:500px; 
+    height:500px; 
+    margin-right:auto;
+} 
 
-.texto-contenedor{
-    position: absolute;
-    right: 0%;
-    left: 50%;
-    z-index: auto;
-    padding: 30px 0;
-    transform: translate(0%, -50%);
-}
-
-.contenedor-articulo{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contenedor-articulo2{
-    display: flex;
-}
+.imagen2{
+    float: left;
+    padding-right: 10px;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+} 
 
 .slider-container{
     margin: auto;
@@ -114,14 +101,11 @@ px
 
 
 .header{
-	/* background-color: #fbfafa; */
     background-color: #fbfafade;
     position: inherit;
     width: auto;
-  /* background-image: url(../img/fondo-header.jpg) */
-/*   background-image: url(../img/fondoHeader5.jpg); */
-  background-position-y: center;
-  background-size: cover;
+    background-position-y: center;
+    background-size: cover;
  }
 
  .fa-solid, .fas {
@@ -147,15 +131,6 @@ px
     width: 20%;
     opacity: 0.9;
 }
-
-/* .boton-buscar{
-    width: 15%;
-} */
-
-/* .barra-navegacion{
-    width: 70%;
-} */
-
 
 .compra{
     display: flex;
@@ -360,6 +335,7 @@ main{
     border-radius: 8px;
 }
 
+
 .barra-footer{
     width: 40%;
     font-size: 10px;
@@ -367,6 +343,7 @@ main{
     font-style: italic;
     padding: 5px;
     height: 30%;
+    
 }
 
 .footer{
@@ -374,6 +351,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .div-iconos-footer{
@@ -424,7 +402,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb
 }
 .texto-final{
     text-align: center;

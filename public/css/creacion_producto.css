@@ -1,9 +1,9 @@
 .titulo{
     font-family: 'Courier New', Courier, monospace;
-    border: 1px solid #ff740d;
+    border: 1px solid #008037;
     font-size: 16px;
     text-align: center;
-    box-shadow: 10px 3px #ffc48e;
+    box-shadow: 10px 3px #ebebeb;
     background-color: white;
 }
 
@@ -35,11 +35,6 @@ label{
 
 main{
     border: 1px solid #ebebeb;
-}
-
-fa-check-circle:before, .fa-circle-check:before {
-    content: "\f058";
-    color: #017f36;
 }
 
 .errores{
@@ -74,8 +69,8 @@ fa-check-circle:before, .fa-circle-check:before {
     padding: 1px;
 }
 .titulo {
-    font-family: 'Courier New', Courier, monospace;
-    border: 1px solid #017f36;
+    font-family: fangsong;
+    border: 1px solid #008037 ;
     padding: 5px;
     font-size: 18px;
     text-align: center;
@@ -86,10 +81,10 @@ fa-check-circle:before, .fa-circle-check:before {
 .boton{
     text-align: center;
     border-radius: 6px;
-    background-color: #017f36;
+    background-color: #008037;
 }
 .boton:hover{
-    background-color: #ffc48e;
+    background-color: #ebebeb;
 }
 
 

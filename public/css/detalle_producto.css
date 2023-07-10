@@ -3,28 +3,27 @@
     margin: 0;
 }
 
-.header{
-	background-color:white;
- }
+main{
+    background-image: url("/img/fondoHeader5.jpg");
+    background-size: cover;
+}
 
 /*  DETALLE PRODUCTO ESPECIFICO */
 .nombre-producto {
     font-size: 14px;
-    border-bottom: 1px solid #ebebeb;
     font-size: 19px;
     text-align: center;
-    background: antiquewhite;
-    font-family: auto;
+    font-family: fangsong;
     padding: 3px;
 }
 
 .marca1{
-    font-size: 14px;
+    font-size: 18px;
     padding: auto;
     margin: auto;
     padding: auto;
     text-align: center;
-    font-style: italic;
+    font-family: fangsong;
 }
 
 .descripcion-producto{
@@ -129,7 +128,7 @@ main {
 
 article {
     margin: 8px;
-    background-color: white;
+    background-color:#fbfafa8f;;
     border-top: 1px solid #ebebeb;
     padding: 8px;
     width: 80%;
@@ -218,9 +217,8 @@ main{
 .precio{
     font-size: 20px;
     font-style: italic;
-    color: rgb(17, 134, 17);
+    color: #008037;
     font-weight: bold;
-    text-decoration: line-through black;
     margin: 0px;
     padding: 0px;
 }
@@ -240,6 +238,7 @@ main{
     margin: 0px;
     margin-bottom: 8px;
     padding: 0px;
+    display:none;
 }
 
 .boton-carrito{
@@ -277,10 +276,11 @@ main{
 
 article {
     margin: 10px;
-    background-color: white;
+    background-color:#fbfafa8f;
     border-top: 1px solid #ebebeb;
     padding: 15px;
     width: 45%;
+    border-radius: 25px;
     }
     
 .div-ofertas{
@@ -328,7 +328,7 @@ nav{
 
 .article-detalle {
     margin: 0px;
-    background-color: white;
+    background-color:  #fbfafa8f;
     border-top: 1px solid #ebebeb;
     padding: 0px;
     width: 40%;
@@ -336,7 +336,7 @@ nav{
 
 .article-ofertas {
         margin: 10px;
-        background-color: white;
+        background-color: #fbfafa8f;;
         border-top: 1px solid #ebebeb;
         padding: 15px;
         width: 20%;
@@ -392,7 +392,7 @@ nav{
     text-align: center;
     border-radius: 8px;
     font-size: 14px;
-    background-color: antiquewhite
+    background-color: #ebebeb
 }
 .bot-carrito:hover{
     background-color: #008037;

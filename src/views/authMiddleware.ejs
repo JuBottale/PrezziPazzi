@@ -1,0 +1,34 @@
+<link href="/css/popup.css" rel="stylesheet" type="text/css" />
+
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs', {cssSheet: "creacion_producto"}) %>    
+
+<body>
+
+    <!-- header -->
+    <%- include('./partials/header-navbar.ejs') %>
+    <!-- /header -->
+
+    <br>
+
+    <main>
+        <h1 class="titulo">Cargar nuevos productos</h1>
+        <br>
+        <section class="register-content">
+            <form action="/productos/creacion_producto" method="post" class="signup-form" enctype="multipart/form-data">
+                <br>
+
+
+<div id="popup" class="overlay">
+    <div id="popupBody">
+        <h2>Atención</h2>
+        <a id="cerrar" href="#popup">&times;</a>
+        <div class="popupContent">
+            <p>Esta pagina es solo para usuarios</p>
+        </div>
+    </div>
+</div>
+
+</body>

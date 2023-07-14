@@ -119,6 +119,7 @@
     width: auto;
     background-position-y: center;
     background-size: cover;
+    background-image: url("/img/fondoHeader6.jpg");
  }
 
  .fa-solid, .fas {
@@ -339,6 +340,7 @@ main{
     margin: 0px;
     margin-bottom: 8px;
     padding: 0px;
+    display: none;
 }
 
 .boton-carrito{
@@ -494,7 +496,7 @@ nav{
     height: 20%;
 }
 .logo {
-    margin: 0 0 0 2px;
+    margin: 0 0 0 -100px;
     padding: 0px;
     text-align: justify;
     width: 50%;

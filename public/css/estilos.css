@@ -18,11 +18,11 @@
     }
 
 .imagen1{
-    float:right; 
-    padding-right: 10px;
-    width:100%; 
-    height:100%; 
-    margin-right:auto;
+    float: right;
+    /* padding-right: 10px; */
+    width: 100%;
+    /* height: 100%; */
+    margin-right: auto;
 } 
 
 .imagen2{
@@ -47,7 +47,7 @@
 .slider-container{
     margin: auto;
     background-color: white;
-    width: 800px;
+    width: 100%;
     padding: 30px;
   }
   
@@ -59,7 +59,7 @@
   
   ul.slider{
     position: relative;
-    width: 800px;
+    width: 100%;
     height: 300px;
   }
   
@@ -74,10 +74,10 @@
       background:#fff;
   }
   
-  ul.slider li img{
-    width: auto;
-    height: 300px;
-    object-fit: cover;
+ul.slider li img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
   }
   
   ul.slider li:first-child {
@@ -90,8 +90,8 @@
   
   .menu{
     text-align: center;
-    margin-left: 100px;
-    width: max-content;
+   /*  margin-left: 100px;
+    width: max-content; */
   }
   
   .menu li{
@@ -130,20 +130,20 @@
 
 .imagenProducto{
     box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
-    width: 100%;
+    width: 70%;
 }
 
 
 .logo{
-    margin: 0 0 0 2px;
     padding: 0px;
-    text-align: justify;
+    /* text-align: justify; */
     width: 13vw;
-    height: 13%;
+    height: 100%;
     vertical-align: middle;
-    /*display: table-cell;*/
-    width: 20%;
+    /* display: table-cell; */
+    width: 100%;
     opacity: 0.9;
+    margin: 0 0 0 -50%;
 }
 
 .compra{
@@ -236,6 +236,7 @@ article {
     border-top: 1px solid #ebebeb;
     padding: 8px;
     width: 80%;
+    margin-left: 10%;
 }
 
 .nombre-seccion{
@@ -376,6 +377,11 @@ main{
     display: none;
 }
 
+.texto-final{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
 
 @media (min-width: 460px){
     /*tablet*/
@@ -421,6 +427,7 @@ nav{
 .texto-final{
     text-align: center;
     font-size: 16px;
+ 
 }
 .texto-final2{
     text-align: center;
@@ -429,8 +436,26 @@ nav{
 
 .imagenProducto{
     box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
-    width: 50%;
+    width: 40%;
     }
+
+.contenedor-articulo1{
+    display: -webkit-inline-box;
+    text-align: justify;
+    flex-wrap: nowrap;
+}
+
+.imagen1{
+    float: right;
+    /* padding-right: 10px; */
+    width: 100%;
+    height: 100%;
+    margin-right: auto;;
+}
+
+.parrafo-imagen{
+    display: none;
+}
 
 }
 
@@ -515,6 +540,7 @@ nav{
 .texto-final{
     text-align: center;
     font-size: 16px;
+    margin-left: -130%;
 }
 .texto-final2{
     text-align: center;
@@ -638,6 +664,9 @@ nav{
     width: 25%;
     }
 
+.parrafo-imagen{
+    display: block;
+    }
 
 }
 

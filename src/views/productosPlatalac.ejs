@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs', {cssSheet: ""}) %>
+
+<body>
+
+        <!-- header -->
+	    <%- include('partials/header-navbar') %>
+	    <!-- /header -->
+
+
+<section> 
+    <h2 style="color: #5aaa5e; text-align: center; padding-top: 5px;">Nuestros productos</h2>
+    <hr>
+<div class="div-ofertas">
+
+
+        <% 
+        
+        let contador = 0
+
+        productos.forEach(producto => { 
+
+        contador = contador + 1
+        
+        if (contador % producto == 0 ){ %>
+            </section> 
+            <br><br>
+            <section>       
+            <div class="div-ofertas" style="display: none;">  
+                        <article >
+                            <img class="img-oferta" src="/img/oferta-80.jpg">
+                        </article>               
+        <%
+        }
+            
+        %>
+
+        <article class="imagenProducto"> 
+            <a href="productos/detalle_producto/<%=producto.id%>"> 
+            <img class="img-oferta2" src ="/img/<%=producto.nombreImagen%>" style="margin-left: 20px"></a>
+            <div class="div-precio">
+                <h3 class="productos"><%=producto.descripcion%><br>"<%=producto.marca%>"</h3> 
+            </div>
+            <br>
+            <div class="div-ofertas1">
+                <p class="precio"><%=producto.precio%><p>
+             <p class="precio-queda"><%=producto.precioDescuentoLeyenda%></p>  
+            </div>
+            <br>
+            <br>
+        </article>
+        <% }) %>
+    </div>
+    <hr>
+
+    
+ </section>
+</main>
+<!-- wsp -->
+	<%- include('partials/wsp') %>
+<!-- /wsp -->
+
+<!-- footer -->
+	<%- include('partials/footer') %>
+<!-- /footer -->
+</body>

@@ -39,7 +39,21 @@ const controlador = {
             res.send(error)
         })      
     },
+    productosPlatalac : (req,res) => {  
+        const productos = db.Productos.findAll({
+            where: {marca:"Platalac"}
+    })
+        
+        .then(productos => {
+            //console.log(productos);
+            res.render ("productosPlatalac",{productos}); 
+            
+        })
+        .catch(error => {
+            res.send(error)
+        })      
+    },
 
-};
+}
 
 module.exports = controlador;

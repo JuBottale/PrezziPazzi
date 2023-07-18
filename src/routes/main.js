@@ -13,4 +13,6 @@ router.get("/quienesSomos", mainController.quienesSomos);
 
 router.get("/productos", mainController.productos);
 
+router.get("/productosPlatalac", mainController.productosPlatalac);
+
 module.exports = router;  

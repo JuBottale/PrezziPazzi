@@ -53,13 +53,12 @@
 
             contador = contador + 1
             
-            if (contador % 4 == 0 ){ %>
+            if (contador % 7 == 0 ){ %>
                 </section> 
                 <br><br>
-                <section> 
-                    <h2 class="nombre-seccion"> 80% en la 2da unidad de alimentos seleccionados </h2>  
-                    <div class="div-ofertas">  
-                        <article>
+                <section>  
+                    <div class="div-ofertas" style="display: none;">  
+                        <article >
                             <img class="img-oferta" src="/img/oferta-80.jpg">
                         </article>                        
             <%
@@ -78,15 +77,15 @@
                     <p class="precio"><%=producto.precio%><p>
                  <p class="precio-queda"><%=producto.precioDescuentoLeyenda%></p>  
                 </div>
-                <button class= "boton-carrito">AÑADIR AL CARRITO</button>
                 <br>
                 <br>
             </article>
             <% }) %>
         </div>
         <hr>
-   
+        <a href="/productos"><button style="color: #000; background: #5cab60; border-radius: 10px; padding: 3px; margin: 4px;">Ver todos</button></a>
 <br>
+
     <article > 
       <div class="contenedor-articulo1">
       <img src="/img/platalac.jpg" class="imagen1" alt="Foto de Ejemplo"/>

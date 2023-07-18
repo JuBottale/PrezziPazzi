@@ -9,5 +9,8 @@ router.get("/", mainController.index);
 
 router.get("/contacto", mainController.contacto);
 
+router.get("/quienesSomos", mainController.quienesSomos);
+
+router.get("/productos", mainController.productos);
 
 module.exports = router;  

@@ -24,6 +24,21 @@ const controlador = {
     contacto : (req,res) => {  
         res.render ("contacto");         
     },
+    quienesSomos : (req,res) => {  
+        res.render ("quienesSomos");         
+    },
+    productos : (req,res) => {  
+        const productos = db.Productos.findAll()
+        
+        .then(productos => {
+            //console.log(productos);
+            res.render ("productos",{productos}); 
+            
+        })
+        .catch(error => {
+            res.send(error)
+        })      
+    },
 
 };
 

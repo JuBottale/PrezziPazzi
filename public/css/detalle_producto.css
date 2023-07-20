@@ -10,8 +10,7 @@ main{
 
 /*  DETALLE PRODUCTO ESPECIFICO */
 .nombre-producto {
-    font-size: 14px;
-    font-size: 19px;
+    font-size: 12px;
     text-align: center;
     font-family: fangsong;
     padding: 3px;
@@ -183,7 +182,7 @@ main{
 /* IMAGENES DE OFERTAS */
 .img-oferta2{
     width: 80%;
-    height: 50%;
+    height: 80%;
 }
 
 /* DIV CONTENEDOR OFERTAS */
@@ -271,9 +270,22 @@ main{
     display: none;
 }
 
+.img-oferta3{
+    width: 60%;
+    height: 60%;
+    margin: 8px;
+    } 
+
+
 
 @media (min-width: 460px){
     /*tablet*/
+
+.img-oferta3{
+    width: 50%;
+    height: 50%;
+    margin: 8px;
+    } 
 
 article {
     margin: 10px;
@@ -325,6 +337,12 @@ nav{
 
 @media (min-width: 768px){
     /*laptop*/
+
+.img-oferta3{
+width: 80%;
+height: 80%;
+margin: 8px;
+} 
 
 .article-detalle {
     margin: 0px;
@@ -431,5 +449,13 @@ nav{
     text-align: center;
     font-size: 14px;
 }
+
+.nombre-producto {
+    font-size: 18px;
+    text-align: center;
+    font-family: fangsong;
+    padding: 3px;
+}
+
 }
 

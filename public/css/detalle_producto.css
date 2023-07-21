@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-main{
-    background-image: url("/img/fondoHeader5.jpg");
-    background-size: cover;
-}
-
 /*  DETALLE PRODUCTO ESPECIFICO */
 .nombre-producto {
     font-size: 12px;

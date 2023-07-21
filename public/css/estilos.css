@@ -380,13 +380,18 @@ main{
 }
 
 .contenedor-final{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+    align-items: center;
 }
 
 .texto-final{
     font-size: 12px;
     margin-right: 10px;
 }
+
 
 
 @media (min-width: 460px){
@@ -504,6 +509,17 @@ article {
 nav{
     display:block;
 }
+
+.nav-texto{
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.nav-texto:hover{
+  /*  background-color: #847979; */
+  border-bottom: 2px solid #008037;
+}
+
 .img-oferta {
     width: 100%;
     text-align: center;
@@ -543,14 +559,17 @@ nav{
 }
 .contenedor-final{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
     border-top: 2px solid #ebebeb;
+    align-items: center;
+    margin-inline: auto;
 }
+
 .texto-final{
     text-align: center;
-    font-size: 16px;
-    margin-left: -130%;
+    font-size: 13px;
+    margin-left: -200%;
 }
 .texto-final2{
     text-align: center;
